@@ -24,5 +24,10 @@ namespace MvcProject.Models
         {
             return applicationDb.Courses.FirstOrDefault(i => i.Id == id);
         }
-    }
+        public List<Course> GetAllCourses()
+        {
+            List<Course> lis = applicationDb.Courses.Select(i => i).ToList();
+            return lis;
+        }
+    } 
 }
