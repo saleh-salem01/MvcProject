@@ -1,0 +1,31 @@
+﻿@model Course
+
+<html>
+    <head>
+   
+    </head>
+    <body>
+    <div class="container h-100">
+        <div class="row align-middle">
+            <div class="col-md-6 col-lg-4 column">
+                <div class="card gr-1">
+                    <div class="txt">
+                        <h1>
+                            @Model.Name
+                        </h1>
+                        <p>
+                            Max Degree @Model.MinDegree <br />
+                            Min Degree @Model.Degree
+                        </p>
+                    </div>
+                    <a href="#">more</a>
+                    <div class="ico-card">
+                        <i class="fa fa-rebel"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </body>
+</html>

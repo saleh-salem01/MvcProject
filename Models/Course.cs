@@ -1,9 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace MvcProject.Models
 {
     public class Course
     {
+        #region Props
         public int Id { get; set; }
         public string Name { get; set; }
         public int Degree { get; set; }
@@ -13,8 +16,13 @@ namespace MvcProject.Models
         public Department? department { get; set; }
         public ICollection<Instructor>? Instructors { get; set; }
         public ICollection<CrsResult> crsResults { get; set; }
+        #endregion
 
-        
+        ApplicationDbContext applicationDb = new ApplicationDbContext();
 
+        public Course GetCourse(int id)
+        {
+            return applicationDb.Courses.FirstOrDefault(i => i.Id == id);
+        }
     }
 }
