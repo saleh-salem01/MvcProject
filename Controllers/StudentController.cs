@@ -13,7 +13,7 @@ namespace MvcProject.Controllers
             var Student = studentsData.GetStudent(id);
             return View("DetailsView", Student);
         }
-        public IActionResult ShowAll(int id) 
+        public IActionResult ShowAll() 
         {
             var StudentList = studentsData.GetStudents();
             return View("ShowAllView", StudentList);

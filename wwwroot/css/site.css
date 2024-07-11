@@ -20,3 +20,33 @@ html {
 body {
   margin-bottom: 60px;
 }
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+.sButton {
+    background-color: darkblue; /* Green background */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+    .sButton:hover {
+        background-color: #1679AB;
+        color:wheat/* Darker green on hover */
+    }
+.profile{
+    height:100px;
+    width:120px;
+    margin:auto;
+}
