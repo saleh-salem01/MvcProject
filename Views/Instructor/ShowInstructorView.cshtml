@@ -1,0 +1,93 @@
+﻿@model Instructor
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include FontAwesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        .details-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+        }
+
+        .details-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+            .details-header h1 {
+                font-size: 2em;
+                color: #333;
+            }
+
+        .details-body p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+            .details-body p strong {
+                color: #007bff;
+            }
+
+        .details-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+            .details-footer a {
+                color: #007bff;
+                text-decoration: none;
+                padding: 10px 20px;
+                border: 1px solid #007bff;
+                border-radius: 5px;
+                transition: background 0.3s, color 0.3s;
+            }
+
+                .details-footer a:hover {
+                    background: #007bff;
+                    color: #fff;
+                }
+
+        .details-icon {
+            text-align: center;
+            margin-top: 20px;
+            color: #007bff;
+        }
+
+            .details-icon i {
+                font-size: 3em;
+            }
+    </style>
+</head>
+<body>
+    <div class="details-container">
+        <div class="details-header">
+            <h1>@Model.Name</h1>
+        </div>
+        <div class="details-body">
+            <p>
+                 <strong>@Model.Address</strong><br />
+                <strong>@Model.course</strong><br />
+                <strong>@Model.Salary</strong>
+            </p>
+        </div>
+        <div class="details-footer">
+            <a href="/Instructor/ShowAllInstructors">Back To List</a>
+        </div>
+        <div class="details-icon">
+            <i class="fa fa-rebel"></i>
+        </div>
+    </div>
+</body>
+</html>
