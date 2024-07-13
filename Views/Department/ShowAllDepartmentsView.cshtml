@@ -1,0 +1,50 @@
+﻿@model List<Department>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include FontAwesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <table class="table table-bordered">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Degree</th>
+                <th scope="col">Min Degree</th>
+                <th scope="col">More</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Department item in Model)
+            {
+                <tr>
+                    <td style="vertical-align: middle;">
+                        <div class="d-flex align-items-center">
+                            <div class="ico-card mr-3" style="color: #007bff;">
+                                <i class="fa fa-rebel" style="font-size: 1.5em;"></i>
+                            </div>
+                            <span>@item.Name</span>
+                        </div>
+                    </td>
+                    <td style="vertical-align: middle;">@item.Manager</td>
+                    <td style="vertical-align: middle;">@item.Courses</td>
+                    <td style="vertical-align: middle;">
+                        <a href="/Department/ShowDepartment/@item.Id" class="btn btn-primary btn-sm">More</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</body>
+</html>
