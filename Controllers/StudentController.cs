@@ -1,36 +1,65 @@
 ﻿using MvcProject.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using MvcProject.ViewModel;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace MvcProject.Controllers
 {
     public class StudentController : Controller
     {
-        Student studentsData = new Student();
-        ApplicationDbContext _context=new ApplicationDbContext();
+        private readonly ApplicationDbContext _context;
+
+        public StudentController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult ShowDetails(int id)
         {
-            var studentCourses = from student in _context.Students
-                                 join crsResult in _context.CrsResults on student.ID equals crsResult.StudId
-                                 join course in _context.Courses on crsResult.CrsId equals course.Id
-                                 select new StudentViewModel
-                                 {
-                                     StudentName = student.Name,
-                                     CourseName = course.Name,
-                                     CourseDegree = crsResult.Degree,
-                                     MaxGrade = course.Degree,
-                                     MinGrade = course.MinDegree
-                                 };
+            var student = _context.Students
+                .Include(s => s.crsResults)
+                .ThenInclude(cr => cr.Course)
+                .FirstOrDefault(s => s.ID == id);
 
-            var Student = studentsData.GetStudent(id);
-            return View("DetailsView", studentCourses);
+            if (student == null)
+            {
+                return NotFound();
+            }
+
+            var studentViewModel = new StudentCourseViewModel
+            {
+                StudentName = student.Name,
+                Courses = student.crsResults.Select(cr => new CourseDetail
+                {
+                    CourseName = cr.Course.Name,
+                    CourseDegree = cr.Degree,
+                    MaxGrade = cr.Course.Degree,
+                    MinGrade = cr.Course.MinDegree
+                }).ToList()
+            };
+            //string Color;
+            //if(student.Grade>= student.crsResults)
+            //{
+            //    Color = "Green";
+            //}
+            //else
+            //{
+            //    Color = "red";
+            //}
+            //ViewData["clr"] = Color;
+            ViewData["StudentDetails"] = studentViewModel;
+
+            return View("DetailsView");
         }
-        public IActionResult ShowAll() 
+
+        public IActionResult ShowAll()
         {
-            var StudentList = studentsData.GetStudents();
-            return View("ShowAllView", StudentList);
+            var students = _context.Students.ToList();
+            ViewData["StudentList"] = students;
+
+            return View("ShowAllView");
         }
     }
 }

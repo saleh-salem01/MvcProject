@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using MvcProject.Models;
+
 namespace MvcProject
 {
     public class Program
@@ -9,6 +12,8 @@ namespace MvcProject
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
