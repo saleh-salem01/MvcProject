@@ -13,5 +13,16 @@ namespace MvcProject.Models
         public int DeptId { get; set; }
         public Department? department { get; set; }
         public ICollection<CrsResult> crsResults { get; set; }
+        ApplicationDbContext StudData = new ApplicationDbContext();
+        public Student GetStudent(int id)
+        {
+
+            return StudData.Students.FirstOrDefault(i => i.ID == id);
+        }
+
+        public List<Student> GetStudents()
+        {
+            return StudData.Students.Select(i=>i).ToList();
+        }
     }
 }

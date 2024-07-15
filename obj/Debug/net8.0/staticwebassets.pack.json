@@ -17,6 +17,14 @@
       "PackagePath": "staticwebassets\\Images\\3.jpg"
     },
     {
+      "Id": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\wwwroot\\Images\\background.png",
+      "PackagePath": "staticwebassets\\Images\\background.png"
+    },
+    {
+      "Id": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\wwwroot\\Images\\cool-background.png",
+      "PackagePath": "staticwebassets\\Images\\cool-background.png"
+    },
+    {
       "Id": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

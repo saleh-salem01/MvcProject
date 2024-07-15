@@ -11,8 +11,10 @@ namespace MvcProject.Controllers
             Instructor Ins = instructor.GetInstructor(id);   
             return View("ShowInstructorView",Ins);
         }
+        ApplicationDbContext context = new ApplicationDbContext();
         public IActionResult ShowAllInstructors()
         {
+            //ViewBag["Crs"] = context.Courses.Select(x => x.Name);
             List<Instructor> Inses = instructor.GetAllInstructors();
             return View("ShowAllInstructorsView", Inses);
         }

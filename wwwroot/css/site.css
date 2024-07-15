@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  margin-bottom: 60px
 }
 .center-screen {
     display: flex;
@@ -56,4 +56,3 @@ body {
     align-items: center;
     text-align: center;
     height: 100vh;
-}
