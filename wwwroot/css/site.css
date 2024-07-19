@@ -56,3 +56,11 @@ body {
     align-items: center;
     text-align: center;
     height: 100vh;
+}
+.red-text {
+    color: red;
+}
+
+.green-text {
+    color: green;
+}

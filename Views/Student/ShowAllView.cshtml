@@ -36,6 +36,7 @@
             <th>Name</th>
             <th>Address</th>
             <th>Actions</th>
+            <th>Edit</th>
         </tr>
     </thead>
     <tbody>
@@ -45,9 +46,12 @@
                 <td>@student.ID</td>
                 <td>@student.Name</td>
                 <td>@student.Address</td>
+
                 <td>
                     <a href="@Url.Action("ShowDetails", "Student", new { id = student.ID })">View Details</a>
                 </td>
+                <td><a href="/student/NewStudent" class="btn btn-primary">Edit</a></td>
+
             </tr>
         }
     </tbody>

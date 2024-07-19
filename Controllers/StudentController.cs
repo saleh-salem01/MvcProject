@@ -31,28 +31,20 @@ namespace MvcProject.Controllers
             var studentViewModel = new StudentCourseViewModel
             {
                 StudentName = student.Name,
-                Courses = student.crsResults.Select(cr => new CourseDetail
+                StudentImage = student.Image ?? "defaultImage.jpg", // تأكد من أن الصورة ليست null
+                Courses = student.crsResults?.Select(cr => new CourseDetail
                 {
-                    CourseName = cr.Course.Name,
+                    CourseName = cr.Course?.Name ?? "Unknown Course", // تأكد من أن اسم الكورس ليس null
                     CourseDegree = cr.Degree,
-                    MaxGrade = cr.Course.Degree,
-                    MinGrade = cr.Course.MinDegree
-                }).ToList()
+                    MaxGrade = cr.Course?.Degree ?? 0,
+                    MinGrade = cr.Course?.MinDegree ?? 0
+                }).ToList() ?? new List<CourseDetail>() // تأكد من أن قائمة الكورسات ليست null
             };
-            //string Color;
-            //if(student.Grade>= student.crsResults)
-            //{
-            //    Color = "Green";
-            //}
-            //else
-            //{
-            //    Color = "red";
-            //}
-            //ViewData["clr"] = Color;
-            ViewData["StudentDetails"] = studentViewModel;
 
-            return View("DetailsView");
+            ViewBag.StudentDetails = studentViewModel;
+            return View("DetailsView",student);
         }
+
 
         public IActionResult ShowAll()
         {
@@ -60,6 +52,11 @@ namespace MvcProject.Controllers
             ViewData["StudentList"] = students;
 
             return View("ShowAllView");
+        }
+
+        public IActionResult NewStudent()
+        {
+            return View("NewStudentView");
         }
     }
 }

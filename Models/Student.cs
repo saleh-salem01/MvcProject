@@ -24,5 +24,7 @@ namespace MvcProject.Models
         {
             return StudData.Students.Select(i=>i).ToList();
         }
+
+
     }
 }

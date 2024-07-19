@@ -16,5 +16,6 @@ namespace MvcProject.Controllers
 
             return View("ShowAllCourses",ListOFCourses);
         }
+        
     }
 }
