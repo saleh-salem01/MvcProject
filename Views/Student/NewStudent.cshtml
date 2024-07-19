@@ -1,11 +1,14 @@
 ﻿@model Student
 @{
-    ViewData["Title"] = "NewStudent";
+    ViewData["Title"] = "New Student";
 }
 
 <h1>NewStudent</h1>
-<form>
-    <label>Student Name </label>
-    <input name="Name" type="text"/>
+<form method="post" action="/student/SaveChanges">
+    <label>Student Name </label><br />
+    <input name="Name" type="text" class="form-control"/>
+    <label>Address</label>
+    <input name="Address" type="text" class="form-control" />
+    <input type="submit" class="btn btn-success" value="Add" />
 </form>
 

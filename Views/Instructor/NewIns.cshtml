@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "NewIns";
+}
+
+<h1>NewIns</h1>
+<form method="post" action="/Instructor/SaveChanges">
+    <div>
+        <label>Instructor Name </label><br />
+        <input name="Name" type="text" class="form-control" />
+    </div>
+   <div>
+        <label>Address</label>
+        <input name="Address" type="text" class="form-control" />
+   </div>
+    <div>
+        <label>Salary</label>
+        <input name="Salary" type="text" class="form-control" />
+    </div>
+    <div>
+        <label>Department</label>
+        <input name="Department" type="text" class="form-control" />
+    </div>
+
+
+    <input type="submit" class="btn btn-success" value="Add" />
+</form>
+
+
+

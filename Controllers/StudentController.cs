@@ -56,7 +56,13 @@ namespace MvcProject.Controllers
 
         public IActionResult NewStudent()
         {
-            return View("NewStudentView");
+            return View("NewStudent");
+        }
+        public IActionResult SaveChanges(Student student)
+        {
+            _context.Students.Add(student);
+            _context.SaveChanges();
+            return View("NewStudent");
         }
     }
 }

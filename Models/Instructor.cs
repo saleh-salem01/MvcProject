@@ -9,9 +9,9 @@ namespace MvcProject.Models
 
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Img { get; set; }
-        public double Salary { get; set; }
-        public string Address { get; set; }
+        public string? Img { get; set; }
+        public double? Salary { get; set; }
+        public string? Address { get; set; }
         [ForeignKey("department")]
         public int Dept_id { get; set; }
         public Department? department { get; set; }

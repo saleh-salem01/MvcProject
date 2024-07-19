@@ -28,7 +28,7 @@
 }
 
 <h2>All Students</h2>
-
+<a href="/student/NewStudent" class="btn btn-primary">New Student</a>
 <table class="table">
     <thead>
         <tr>
@@ -36,7 +36,7 @@
             <th>Name</th>
             <th>Address</th>
             <th>Actions</th>
-            <th>Edit</th>
+       
         </tr>
     </thead>
     <tbody>
@@ -50,7 +50,7 @@
                 <td>
                     <a href="@Url.Action("ShowDetails", "Student", new { id = student.ID })">View Details</a>
                 </td>
-                <td><a href="/student/NewStudent" class="btn btn-primary">Edit</a></td>
+               
 
             </tr>
         }

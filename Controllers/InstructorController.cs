@@ -18,5 +18,21 @@ namespace MvcProject.Controllers
             List<Instructor> Inses = instructor.GetAllInstructors();
             return View("ShowAllInstructorsView", Inses);
         }
+
+        public IActionResult NewIns()
+        {
+            return View();
+        }
+        public IActionResult SaveChanges(Department department) {
+            if (department.Name != null) {
+                context.Instructors.Add(instructor);
+                context.SaveChanges();
+                List<Instructor> Inses = instructor.GetAllInstructors();
+                return View("ShowAllInstructorsView", Inses);
+            }
+            
+            return View("NewIns");
+        }
+
     }
 }
