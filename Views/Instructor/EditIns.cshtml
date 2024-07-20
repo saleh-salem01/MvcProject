@@ -1,16 +1,16 @@
 ﻿@model Instructor
 
-<h1 class="center">New Instructor</h1>
-<form method="post" action="/Instructor/SaveChanges">
-    <input type="hidden" name="Id"/>
+<h1 class="center">Edit Instructor</h1>
+<form method="post" action="/Instructor/SaveEdit/@Model.Id">
+    <input type="hidden" name="Id" />
     <div>
         <label>Instructor Name </label><br />
         <input name="Name" type="text" class="form-control" value="@Model.Name" style="width: 300px; height: 30px;" />
     </div>
-   <div>
+    <div>
         <label>Address</label>
         <input name="Address" type="text" class="form-control" value="@Model.Address" style="width: 300px; height: 30px;" />
-   </div>
+    </div>
     <div>
         <label>Salary</label>
         <input name="Salary" type="text" class="form-control" value="@Model.Salary" style="width: 300px; height: 30px;" />
@@ -25,7 +25,7 @@
     </div>
 
 
-    <input type="submit" class="btn btn-success mt-1" value="Add" />
+    <input type="submit" class="btn btn-success mt-1" value="Edit" />
 </form>
 
 

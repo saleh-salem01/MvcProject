@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <a href="/Instructor/NewIns" class="btn btn-primary">New Instructor</a>
+    <a href="/Instructor/NewIns" class="btn btn-primary mb-1">New Instructor</a>
     <table class="table table-bordered">
         <thead class="thead-light">
             <tr>
@@ -21,6 +21,7 @@
                 <th scope="col">Adress</th>
                 
                 <th scope="col">More</th>
+                <th scope="col">Edit </th>
             </tr>
         </thead>
         <tbody>
@@ -41,6 +42,7 @@
                     <td style="vertical-align: middle;">
                         <a href="/Instructor/ShowInstructor/@item.Id" class="btn btn-primary btn-sm">More</a>
                     </td>
+                    <td><a href="/Instructor/Edit/@item.Id" class="btn btn-primary btn-sm">Edit</a></td>
                 </tr>
             }
         </tbody>
