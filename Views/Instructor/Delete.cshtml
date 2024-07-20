@@ -1,0 +1,26 @@
+﻿@model Instructor
+
+<h1 class="center">View Instructor</h1>
+<form method="post" action="/Instructor/SaveDelete/@Model.Id">
+    <div>
+        <label>Instructor Name </label><br />
+        <input name="Name" type="text" class="form-control" value="@Model.Name" style="width: 300px; height: 30px;" readonly />
+    </div>
+    <div>
+        <label>Address</label>
+        <input name="Address" type="text" class="form-control" value="@Model.Address" style="width: 300px; height: 30px;" readonly />
+    </div>
+    <div>
+        <label>Salary</label>
+        <input name="Salary" type="text" class="form-control" value="@Model.Salary" style="width: 300px; height: 30px;" readonly />
+    </div>
+    <div>
+        <label>Department</label>
+        <input name="Dept_id" type="number" class="form-control" value="@Model.Dept_id" style="width: 300px; height: 30px;" readonly />
+    </div>
+    <div>
+        <label>Course</label>
+        <input name="CrsId" type="number" class="form-control" value="@Model.CrsId" style="width: 300px; height: 30px;" readonly />
+    </div>
+    <input type="submit" class="btn btn-danger mt-1" value="Delete" />
+</form>

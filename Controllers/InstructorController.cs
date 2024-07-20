@@ -45,34 +45,70 @@ namespace MvcProject.Controllers
         #region EditAction
         public IActionResult Edit(int id)
         {
-            Instructor Ins = context.Instructors.FirstOrDefault(x => x.Id == id);
-            return View("EditIns", Ins);
-        }
-        public IActionResult SaveEdit(int id,Instructor NewIns)
-        {
-            Instructor oldIns = context.Instructors.FirstOrDefault(x => x.Id == id);
-            if (NewIns == null || NewIns.Name == null)
+            Instructor ins = context.Instructors.FirstOrDefault(x => x.Id == id);
+            if (ins == null)
             {
-                // Handle the case where Ins is null or Ins.Name is null
-                return View("EditIns", NewIns);
+
+                return NotFound();
             }
-            else {     
-                if (oldIns != null)
-                {
-                    oldIns.Name = NewIns.Name;
-                    oldIns.Address = NewIns.Address;
-                    oldIns.Salary = NewIns.Salary;
-                    oldIns.Dept_id = NewIns.Dept_id;
-                    oldIns.CrsId = NewIns.CrsId;
-                    context.SaveChanges();
-                   
-                }
+            return View("EditIns", ins);
+        }
+
+ 
+
+        [HttpPost]
+        public IActionResult SaveEdit(int id, Instructor newIns)
+        {
+            if (newIns == null || string.IsNullOrEmpty(newIns.Name))
+            {
+                ModelState.AddModelError("", "Invalid instructor details.");
+                return View("EditIns", newIns);
             }
-            // List<Instructor> Inses = instructor.GetAllInstructors();
+
+            Instructor oldIns = context.Instructors.FirstOrDefault(x => x.Id == id);
+            if (oldIns != null)
+            {
+                oldIns.Name = newIns.Name;
+                oldIns.Address = newIns.Address;
+                oldIns.Salary = newIns.Salary;
+                oldIns.Dept_id = newIns.Dept_id;
+                oldIns.CrsId = newIns.CrsId;
+                context.SaveChanges();
+            }
+            else
+            {
+                ModelState.AddModelError("", "Instructor not found.");
+                return View("EditIns", newIns);
+            }
+
             return RedirectToAction("ShowAllInstructors");
         }
-    }
         #endregion
-
+        #region Delete Actions
+        public IActionResult Delete(int id)
+        {
+            Instructor DIns = context.Instructors.FirstOrDefault(n => n.Id == id);
+            return View(DIns);
+        }
+        public IActionResult SaveDelete(int id) 
+        {
+            Instructor DIns = context.Instructors.FirstOrDefault(n=>n.Id== id);
+            if (DIns != null)
+            {
+                context.Instructors.Remove(DIns);
+                context.SaveChanges();
+                
+            }
+            return RedirectToAction("ShowAllInstructors");
+        }
+        #endregion
     }
+    
+
+
+}
+
+
+
+
 

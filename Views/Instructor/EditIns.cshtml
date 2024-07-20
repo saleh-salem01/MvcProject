@@ -2,7 +2,6 @@
 
 <h1 class="center">Edit Instructor</h1>
 <form method="post" action="/Instructor/SaveEdit/@Model.Id">
-    <input type="hidden" name="Id" />
     <div>
         <label>Instructor Name </label><br />
         <input name="Name" type="text" class="form-control" value="@Model.Name" style="width: 300px; height: 30px;" />
@@ -17,16 +16,12 @@
     </div>
     <div>
         <label>Department</label>
-        <input name="Dept_Id" type="text" class="form-control" value="@Model.Dept_id" style="width: 300px; height: 30px;" />
+        <input name="Dept_id" type="number" class="form-control" value="@Model.Dept_id" style="width: 300px; height: 30px;" />
     </div>
     <div>
         <label>Course</label>
-        <input name="CrsId" type="text" class="form-control" value="@Model.CrsId" style="width: 300px; height: 30px;" />
+        <input name="CrsId" type="number" class="form-control" value="@Model.CrsId" style="width: 300px; height: 30px;" />
     </div>
 
-
-    <input type="submit" class="btn btn-success mt-1" value="Edit" />
+    <input type="submit" class="btn btn-success mt-1" value="Save" />
 </form>
-
-
-
