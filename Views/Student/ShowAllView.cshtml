@@ -1,29 +1,6 @@
-﻿@* @model List<Student>
-
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Image</th>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Address</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (Student item in Model)
-        {
-            <tr>
-                <td><img src="/Images/@item.Image" class="img-thumbnail" style="width: 100px; height: 100px;" /></td>
-                <td>@item.ID</td>
-                <td>@item.Name</td>
-                <td>@item.Address</td>
-                <td><a class="sButton" href="/Student/ShowDetails/@item.ID">Details</a></td>
-            </tr>
-        }
-    </tbody>
-</table>
- *@
+﻿
 @{
+    Layout = "_Layout1";
     var studentList = ViewData["StudentList"] as List<MvcProject.Models.Student>;
 }
 
