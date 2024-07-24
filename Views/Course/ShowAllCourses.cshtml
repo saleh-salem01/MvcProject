@@ -22,6 +22,7 @@
             <th scope="col">Degree</th>
             <th scope="col">Min Degree</th>
             <th scope="col">More</th>
+                <th scope="col">Edit</th>
         </tr>
     </thead>
     <tbody>
@@ -40,7 +41,8 @@
                 <td style="vertical-align: middle;">@item.MinDegree</td>
                 <td style="vertical-align: middle;">
                         <a href="/Course/ShowCourseById/@item.Id" class="btn btn-primary btn-sm">More</a>
-                </td>
+                </td style="vertical-align: middle;">
+                    <td> <a asp-action="Edit" asp-controller="Course" asp-route-Id="@item.Id">Edit</a></td>
             </tr>
         }
     </tbody>
