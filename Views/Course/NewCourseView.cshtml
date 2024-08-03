@@ -6,14 +6,17 @@
     <div>
         <label>Course Name </label><br />
         <input asp-for="@Model.Name" style="width: 300px; height: 30px;" />
+        <span asp-validation-for="Name" class="text-danger"></span>
     </div>
     <div>
         <label>Degree</label>
         <input asp-for="@Model.Degree" style="width: 300px; height: 30px;" />
+        <span asp-validation-for="Degree" class="text-danger"></span>
     </div>
     <div>
         <label>MinDegree</label>
         <input asp-for="@Model.MinDegree" style="width: 300px; height: 30px;" />
+        <span asp-validation-for="MinDegree" class="text-danger"></span>
     </div>
     <div>
         <select asp-for="@Model.DeptId" asp-items="@(new SelectList(ViewBag.Departments, "Value", "Text"))">
@@ -28,7 +31,8 @@
 
     <button type="submit" class="btn btn-success">Add Course</button>
 </form>
-
-
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 
 

@@ -95,7 +95,12 @@ namespace MvcProject.Controllers
             return RedirectToAction("ShowAllCourses");
         }
         #endregion
-
+        #region validation
+        public bool CheckDegree(int MinDegree,int Degree)
+        {
+            return MinDegree <= Degree;
+        }
+        #endregion
 
 
     }
