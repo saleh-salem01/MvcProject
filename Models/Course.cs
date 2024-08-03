@@ -27,14 +27,6 @@ namespace MvcProject.Models
 
         ApplicationDbContext applicationDb = new ApplicationDbContext();
 
-        public Course GetCourse(int id)
-        {
-            return applicationDb.Courses.FirstOrDefault(i => i.Id == id);
-        }
-        public List<Course> GetAllCourses()
-        {
-            List<Course> lis = applicationDb.Courses.Select(i => i).ToList();
-            return lis;
-        }
+       
     } 
 }

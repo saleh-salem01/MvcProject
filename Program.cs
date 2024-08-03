@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MvcProject.Models;
+using MvcProject.Repository;
 
 namespace MvcProject
 {
@@ -14,6 +15,10 @@ namespace MvcProject
 
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddScoped<ICourseRepository, CourseRepository>();
+
+
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

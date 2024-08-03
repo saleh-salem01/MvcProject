@@ -1,11 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MvcProject.Models;
+using MvcProject.Repository;
 
 namespace MvcProject.Controllers
 {
     public class CourseController : Controller
     {
-        Course course = new Course();
+        ICourseRepository course;
+        public CourseController( ICourseRepository course)
+        {
+            this.course = course;
+        }
         public IActionResult ShowCourseById(int id)
         {
             var s = course.GetCourse(id);

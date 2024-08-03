@@ -4,11 +4,16 @@ namespace MvcProject.Models
 {
     public class UniqueAttribute :ValidationAttribute
     {
-        ApplicationDbContext _connext =  new ApplicationDbContext();
         protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
         {
+            ApplicationDbContext _connext = new ApplicationDbContext();
+            if (value == null)
+            {
+                return ValidationResult.Success;
+            }
 
-            Course Crs= _connext.Courses.FirstOrDefault(c => c.Name == value);
+            string name = (string)value;
+            Course Crs= _connext.Courses.FirstOrDefault(c => c.Name == name);
             if ( Crs == null)
             {
                 return ValidationResult.Success;
