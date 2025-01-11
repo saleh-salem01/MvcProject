@@ -251,3 +251,7 @@ C:\Users\ALEX TOP\Desktop\.NET\MVC\iti\MvcProject\MvcProject\obj\Debug\net8.0\re
 C:\Users\ALEX TOP\Desktop\.NET\MVC\iti\MvcProject\MvcProject\obj\Debug\net8.0\MvcProject.pdb
 C:\Users\ALEX TOP\Desktop\.NET\MVC\iti\MvcProject\MvcProject\obj\Debug\net8.0\MvcProject.genruntimeconfig.cache
 C:\Users\ALEX TOP\Desktop\.NET\MVC\iti\MvcProject\MvcProject\obj\Debug\net8.0\ref\MvcProject.dll
+C:\Users\ALEX TOP\Desktop\.NET\MVC\iti\MvcProject\MvcProject\bin\Debug\net8.0\MvcProject.staticwebassets.endpoints.json
+C:\Users\ALEX TOP\Desktop\.NET\MVC\iti\MvcProject\MvcProject\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\ALEX TOP\Desktop\.NET\MVC\iti\MvcProject\MvcProject\obj\Debug\net8.0\staticwebassets\msbuild.MvcProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\ALEX TOP\Desktop\.NET\MVC\iti\MvcProject\MvcProject\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

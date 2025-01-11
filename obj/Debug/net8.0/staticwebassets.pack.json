@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MvcProject.bundle.scp.css",
-      "PackagePath": "staticwebassets\\MvcProject.bundle.scp.css"
+      "PackagePath": "staticwebassets\\MvcProject.2ffbhws8f5.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\wwwroot\\Images\\1.jpg",
@@ -295,6 +295,10 @@
     {
       "Id": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MvcProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MvcProject.Microsoft.AspNetCore.StaticWebAssets.props",

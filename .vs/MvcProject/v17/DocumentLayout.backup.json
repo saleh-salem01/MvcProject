@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|c:\\users\\alex top\\desktop\\.net\\mvc\\iti\\mvcproject\\mvcproject\\views\\course\\editcourseview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|solutionrelative:views\\course\\editcourseview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|c:\\users\\alex top\\desktop\\.net\\mvc\\iti\\mvcproject\\mvcproject\\viewmodel\\coursedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|solutionrelative:viewmodel\\coursedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|c:\\users\\alex top\\desktop\\.net\\mvc\\iti\\mvcproject\\mvcproject\\repository\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|solutionrelative:repository\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|c:\\users\\alex top\\desktop\\.net\\mvc\\iti\\mvcproject\\mvcproject\\repository\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|solutionrelative:repository\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|c:\\users\\alex top\\desktop\\.net\\mvc\\iti\\mvcproject\\mvcproject\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|solutionrelative:controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|c:\\users\\alex top\\desktop\\.net\\mvc\\iti\\mvcproject\\mvcproject\\models\\uniqueattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|solutionrelative:models\\uniqueattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|c:\\users\\alex top\\desktop\\.net\\mvc\\iti\\mvcproject\\mvcproject\\repository\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|solutionrelative:repository\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|c:\\users\\alex top\\desktop\\.net\\mvc\\iti\\mvcproject\\mvcproject\\repository\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|solutionrelative:repository\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{56F1F550-4C9B-4C0A-8257-769574C24F4A}|MvcProject.csproj|c:\\users\\alex top\\desktop\\.net\\mvc\\iti\\mvcproject\\mvcproject\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,33 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EditCourseView.cshtml",
-              "DocumentMoniker": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\Views\\Course\\EditCourseView.cshtml",
-              "RelativeDocumentMoniker": "Views\\Course\\EditCourseView.cshtml",
-              "ToolTip": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\Views\\Course\\EditCourseView.cshtml",
-              "RelativeToolTip": "Views\\Course\\EditCourseView.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-11T11:17:51.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CourseDetail.cs",
-              "DocumentMoniker": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\ViewModel\\CourseDetail.cs",
-              "RelativeDocumentMoniker": "ViewModel\\CourseDetail.cs",
-              "ToolTip": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\ViewModel\\CourseDetail.cs",
-              "RelativeToolTip": "ViewModel\\CourseDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T11:17:33.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -96,51 +62,48 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAowA8AAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T13:29:31.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-03T13:29:31.071Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ICourseRepository.cs",
               "DocumentMoniker": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\Repository\\ICourseRepository.cs",
               "RelativeDocumentMoniker": "Repository\\ICourseRepository.cs",
               "ToolTip": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\Repository\\ICourseRepository.cs",
               "RelativeToolTip": "Repository\\ICourseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T13:14:12.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-03T13:14:12.987Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CourseRepository.cs",
               "DocumentMoniker": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\Repository\\CourseRepository.cs",
               "RelativeDocumentMoniker": "Repository\\CourseRepository.cs",
               "ToolTip": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\Repository\\CourseRepository.cs",
               "RelativeToolTip": "Repository\\CourseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABDAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T13:04:46.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-03T13:04:46.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "CourseController.cs",
               "DocumentMoniker": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\Controllers\\CourseController.cs",
               "RelativeDocumentMoniker": "Controllers\\CourseController.cs",
               "ToolTip": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\Controllers\\CourseController.cs",
               "RelativeToolTip": "Controllers\\CourseController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAqwAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-22T21:00:28.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Course.cs",
               "DocumentMoniker": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\Models\\Course.cs",
               "RelativeDocumentMoniker": "Models\\Course.cs",
@@ -148,12 +111,11 @@
               "RelativeToolTip": "Models\\Course.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T21:04:58.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-22T21:04:58.956Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "UniqueAttribute.cs",
               "DocumentMoniker": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\Models\\UniqueAttribute.cs",
               "RelativeDocumentMoniker": "Models\\UniqueAttribute.cs",
@@ -161,12 +123,11 @@
               "RelativeToolTip": "Models\\UniqueAttribute.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T12:09:46.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-03T12:09:46.523Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "ShowAllView.cshtml",
               "DocumentMoniker": "C:\\Users\\ALEX TOP\\Desktop\\.NET\\MVC\\iti\\MvcProject\\MvcProject\\Views\\Student\\ShowAllView.cshtml",
               "RelativeDocumentMoniker": "Views\\Student\\ShowAllView.cshtml",
@@ -174,8 +135,7 @@
               "RelativeToolTip": "Views\\Student\\ShowAllView.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-23T13:39:48.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T13:39:48.196Z"
             }
           ]
         }
